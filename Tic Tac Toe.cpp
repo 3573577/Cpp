@@ -164,6 +164,7 @@ int main() {
   draw();
   switchPlayer();
   input();
+    checkWin();
   }
   return 0;
 }
