@@ -108,6 +108,57 @@ gameover=true;
   }
   }
 }
+void checkWin (){
+if(s[0][0]=='X'&&s[0][1]=='X'&&s[0][2]=='X'){
+cout<<magenta<<"You win player 'X'"<<endl;
+gameover=true;
+}
+if(s[0][0]=='X'&&s[1][1]=='X'&&s[2][2]=='X'){
+cout<<magenta<<"You win player 'X' "<<endl;
+gameover=true;
+}
+if(s[0][0]=='X'&&s[1][0]=='X'&&s[2][0]=='X'){
+cout<<magenta<<"You win player 'X' "<<endl;
+gameover=true;
+}
+if(s[0][1]=='X'&&s[1][1]=='X'&&s[2][1]=='X'){
+cout<<magenta<<"You win player 'X' "<<endl;
+gameover=true;
+}
+if(s[0][2]=='X'&&s[1][1]=='X'&&s[2][0]=='X'){
+cout<<magenta<<"You win player 'X' "<<endl;
+gameover=true;
+}
+if(s[1][0]=='X'&&s[1][1]=='X'&&s[2][1]=='X'){
+cout<<magenta<<"You win player 'X' "<<endl;
+gameover=true;
+}
+  // Checking O
+if(s[0][0]=='O'&&s[0][1]=='O'&&s[0][2]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+if(s[0][0]=='O'&&s[1][1]=='O'&&s[2][2]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+if(s[0][0]=='O'&&s[1][0]=='O'&&s[2][0]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+if(s[0][1]=='O'&&s[1][1]=='O'&&s[2][1]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+if(s[0][2]=='O'&&s[1][1]=='O'&&s[2][0]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+if(s[1][0]=='O'&&s[1][1]=='O'&&s[2][1]=='O'){
+cout<<magenta<<"You win player 'O' "<<endl;
+gameover=true;
+}
+}
 int main() {
   while(!gameover){
   draw();
